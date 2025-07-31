@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "mongodb-event-management",
-=======
   "name": "event-backend",
->>>>>>> f84c02b2a5467963b47c160b5dee3f873701f94a
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,10 +13,6 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
-<<<<<<< HEAD
-    "mongodb": "^6.17.0",
-=======
->>>>>>> f84c02b2a5467963b47c160b5dee3f873701f94a
     "mongoose": "^8.16.4"
   }
 }
