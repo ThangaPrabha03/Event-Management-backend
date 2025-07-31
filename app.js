@@ -18,9 +18,9 @@ mongoose.connect(process.env.MONGODB_URI, {
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.error('Mongo Error:', err));
 
-// Routes
-app.use('/api/events', eventRoutes);
-app.use('/api/registrations', registrationRoutes);
+// Routes — mount at root, since you already use /api inside EventRoute.js
+app.use('/', eventRoutes);
+app.use('/', registrationRoutes);
 
 // Server listening
 const PORT = process.env.PORT || 8080;
